@@ -6,7 +6,12 @@
 				$size = 19;
 				for ($col = 1; $col <= $size; $col++){
 					echo "<th>$col</th>";
-				}
+				}?>
+		</tr>
+	</thead>
+	<tbody>
+	<?php
+	
 				for ($row = 1; $row <= $size; $row++){
 					echo "<tr>";
 						echo "<th> $row </th>";
@@ -15,7 +20,6 @@
 							}
 					echo "</tr>\n";
 				}
-				?>
-		</tr>
-	</thead>
+	?>			
+	</tbody>			
 </table>
