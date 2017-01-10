@@ -3,12 +3,16 @@
 		<tr>
 			<th>&nbsp;</th>
 				<?php
-				for ($col = 1; $col <= 19; $col++){
+				$size = 19;
+				for ($col = 1; $col <= $size; $col++){
 					echo "<th>$col</th>";
 				}
-				for ($row = 1; $row <= 19; $row++){
+				for ($row = 1; $row <= $size; $row++){
 					echo "<tr>";
 						echo "<th> $row </th>";
+							for ($col = 1; $col <= $size; $col++){
+								echo "<td>" . $col * $row .  "</td>";
+							}
 					echo "</tr>\n";
 				}
 				?>
